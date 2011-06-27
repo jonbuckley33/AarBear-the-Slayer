@@ -46,14 +46,14 @@ public class FirstLevel extends Level
 		floor2.setImage(earthFloor);
 		walls.add(floor2);
 		
-		BearEnemy badguy2 = new BearEnemy(2050, HEIGHT-500, 45, 45, Color.red, "Enemy", true, getWalls());
+		BearEnemy badguy2 = new BearEnemy(2050, HEIGHT-500, 45, 45, Color.red, "Enemy", true, getWalls(), Window.getWindow());
 		badguy2.setElement(floor2);
 		
 		Element floor = new Element(1100, HEIGHT-200, 400, 20, Color.blue, "Floor", false);
 		floor.setImage(earthFloor);
 		walls.add(floor);
 		
-		BearEnemy badguy = new BearEnemy(1350, HEIGHT-400, 45, 45, Color.red, "Enemy", true, getWalls());
+		BearEnemy badguy = new BearEnemy(1350, HEIGHT-400, 45, 45, Color.red, "Enemy", true, getWalls(), Window.getWindow());
 		badguy.setElement(floor);
 		BufferedImage img = null;
 
